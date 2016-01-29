@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTests" parallel="tests">
+    <test name="ChromeTests">
+        <parameter name="hub" value="local" />
+        <parameter name="browserName" value="Chrome" />
+        <classes>
+            <class name="Nhrytsko.WebDriver.Tests.LoginPageTestSuite" />
+            <class name="Nhrytsko.WebDriver.Tests.MainPageTestSuite" />
+        </classes>
+    </test>
+</suite>
